@@ -1,0 +1,27 @@
+package rules.p1
+
+import java.math.BigDecimal
+import demo.Bill
+import demo.Item
+
+rule "两件7折"
+    salience 100
+    no-loop true
+    when
+        $bill : Bill()
+    then
+        System.out.println("两件");
+        $bill.setDiscountPrice(BigDecimal.valueOf(5));
+        update($bill);
+end
+
+rule "全场9折"
+    salience 10
+    no-loop true
+    when
+        $bill : Bill (items.size <=1 )
+    then
+        System.out.println("两件");
+        $bill.setDiscountPrice(BigDecimal.valueOf(5));
+        update($bill);
+end
