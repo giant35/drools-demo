@@ -1,4 +1,4 @@
-package rules.p1
+package rs
 
 import java.math.BigDecimal
 import demo.Bill

@@ -16,6 +16,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <drools.version>7.28.0.Final</drools.version>
     </properties>
     <dependencies>
         <dependency>
@@ -26,21 +27,19 @@
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-core</artifactId>
-            <version>6.5.0.Final</version>
-<!-- notwork??           <version>7.28.0.Final</version>-->
-
+            <version>${drools.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.drools/drools-compiler -->
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-compiler</artifactId>
-            <version>6.5.0.Final</version>
+            <version>${drools.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.drools/drools-templates -->
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-templates</artifactId>
-            <version>6.5.0.Final</version>
+            <version>${drools.version}</version>
         </dependency>
 
         <dependency>
