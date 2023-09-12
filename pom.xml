@@ -16,7 +16,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <drools.version>7.28.0.Final</drools.version>
+        <drools.version>7.69.0.Final</drools.version>
     </properties>
     <dependencies>
         <dependency>
